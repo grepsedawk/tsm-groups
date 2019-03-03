@@ -7,9 +7,9 @@ These is my TSM group that includes as many BoE's from 1-110 that I was able to 
 1. Create a new profile (Optional)
 1. (If you are using the attached operation) Add `normalmarket` Custom Source via `/tsm` -> Settings -> Custom Sources:
 
-```tsm
-max(min(dbmarket, 125%dbregionmarketavg), 85%dbregionmarketavg)
-```
+    ```tsm
+    max(min(dbmarket, 125%dbregionmarketavg), 85%dbregionmarketavg)
+    ```
 
 1. Copy the entire contents of `transmog.tsm` or `recipes.tsm` (or both!) and paste into "Import/Export" -> Import
 
