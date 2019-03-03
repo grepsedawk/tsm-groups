@@ -1,6 +1,6 @@
-# Grepsedawk's Transmog Groups (Beta)
+# Grepsedawk's TSM Groups (Beta)
 
-This is my TSM group that includes as many BoE's from 1-110 that I was able to put together. There is a shopping operation and an auctioning operation.
+These is my TSM group that includes as many BoE's from 1-110 that I was able to put together. There is a shopping operation and an auctioning operation.
 
 ## Installation/Import
 
