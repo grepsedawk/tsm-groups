@@ -1,6 +1,6 @@
 # Grepsedawk's TSM Groups (Beta)
 
-These is my TSM group that includes as many BoE's from 1-110 that I was able to put together. There is a shopping operation and an auctioning operation.
+These are my TSM groups. They are split so you can pick and choose which groups you want and so the import goes smoothly.
 
 ## Installation/Import
 
@@ -11,9 +11,9 @@ These is my TSM group that includes as many BoE's from 1-110 that I was able to 
     max(min(dbmarket, 125%dbregionmarketavg), 85%dbregionmarketavg)
     ```
 
-1. Copy the entire contents of `transmog.tsm` or `recipes.tsm` (or both!) and paste into "Import/Export" -> Import
+1. Copy the entire contents of any .tsm file and paste into "Import/Export" -> Import
 
-## How It Works
+## How My Transmog Operation Works
 
 ### normalmarket Custom Source
 
