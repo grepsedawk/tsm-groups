@@ -31,7 +31,7 @@ The shopping is a very simple operation in which looks for any transmog that you
 iflt(normalmarket, 5000g, 0c,  10% normalmarket)
 ```
 
-### Auctioning
+### Transmog Operation Explained
 
 The auctioning operation is smart and tries to get the best value. The minimum price is aggressive but is smart to back off at lower values. The normal price and maximum price keep a reasonable hold on runaway prices whilst allowing your realm to slide above region avg.
 
@@ -48,21 +48,23 @@ If an item's normalmarket is 5k then it will allow the minimum price to fall no 
 If an item's normalmarket is 50k then it will allow the minimum price to fall no lower than 85% the normalmarket price.
 The pricing is a linear equation, draw a line from (5k,50%) and (50k,85%). It gets increasingly more aggressive as the item is more valuable.
 
-If there's an auction below minimum then we post at normal price.
+If there's an auction below minimum then we post at max price.
 
 
 #### Normal Price
 
 ```tsm
-300% normalmarket
+185% normalmarket
 ```
 
-We post at normal price if auctions are below minimum to force a soft reset. With time it balances the avg to creep upward. If your competitors lapse on posting and undercutting each other, they will sometimes undercut this agressive price, allowing you to undercut and make a sale at a larger profit resulting in a massive reset without paying more than a few extra deposits and patience.
+
 
 #### Max Price
 
 ```tsm
-500% normalmarket
+300% normalmarket
 ```
 
-I set a max price of 500% normalmarket because anything higher than this will probably not sell until the price is lowered. If somebody else is posting above max and that is the lowest auction, I simply post at my normal price.
+We post at max price if auctions are below minimum to force a soft reset. With time it balances the avg to creep upward. If your competitors lapse on posting and undercutting each other, they will sometimes undercut this agressive price, allowing you to undercut and make a sale at a larger profit resulting in a massive reset without paying more than a few extra deposits and patience.
+
+I set a max price of 300% normalmarket because anything higher than this will probably not sell until the price is lowered. If somebody else is posting above max and that is the lowest auction, I simply post at my max price.
