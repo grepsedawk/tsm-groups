@@ -1,4 +1,4 @@
-# Grepsedawk's TSM Groups (Beta)
+# Grepsedawk's TSM Groups
 
 These are my TSM groups. They are split so you can pick and choose which groups you want and so the import goes smoothly.
 
